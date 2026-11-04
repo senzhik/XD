@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131b">
+  <title>Импульс — тест реакции</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><a class="logo" href="./">↯ импульс<span>ТЕСТ РЕАКЦИИ</span></a><span class="badge">Твой личный рекорд ждёт</span></header>
+    <section class="intro"><p class="eyebrow">СКОРОСТЬ НАЧИНАЕТСЯ С СИГНАЛА</p><h1>Как быстро<br>ты <em>реагируешь?</em></h1><p class="description">Дождись зелёного. Нажми. Узнай свою скорость.</p></section>
+    <button id="arena" class="arena" data-state="idle" type="button" aria-describedby="hint">
+      <span id="symbol" class="symbol" aria-hidden="true">↯</span>
+      <span id="title" class="arena-title">Готов проверить себя?</span>
+      <span id="subtitle" class="arena-subtitle">Нажми здесь, чтобы начать</span>
+      <span class="key">КЛИК / ПРОБЕЛ</span>
+    </button>
+    <p id="hint" class="hint">Не угадывай момент — реагируй на смену цвета.</p>
+    <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+    <section class="stats" aria-label="Статистика"><div><span>ЛУЧШИЙ РЕЗУЛЬТАТ</span><strong id="best">—<small> мс</small></strong></div><div><span>СРЕДНЕЕ ЗА СЕССИЮ</span><strong id="average">—<small> мс</small></strong></div><div><span>ПОПЫТОК В СЕССИИ</span><strong id="count">0</strong></div></section>
+    <section class="history"><div class="history-heading"><h2>Последние попытки</h2><button id="reset" type="button">Сбросить всё ↗</button></div><div id="results" class="results"><p class="empty">Здесь появятся твои результаты. Начнём?</p></div></section>
+    <footer><span>01 · Нажми для старта</span><span>02 · Дождись зелёного</span><span>03 · Реагируй!</span></footer>
+    <p class="note">Результат зависит от задержки экрана и устройства. Это игра, а не медицинский тест.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
